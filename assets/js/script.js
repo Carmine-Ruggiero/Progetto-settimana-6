@@ -29,7 +29,8 @@ document.getElementById('formProgetto').addEventListener('submit', function(e) {
     {
       icona: "🏠",
       titolo: "Progettazione residenziale",
-      descrizione: "Case private, ville e ristrutturazioni domestiche, dal sopralluogo alla consegna delle chiavi."
+      descrizione: "Case private, ville e ristrutturazioni domestiche, dal sopralluogo alla consegna delle chiavi.",
+	  
     },
     {
       icona: "🏢",
@@ -54,24 +55,30 @@ document.getElementById('formProgetto').addEventListener('submit', function(e) {
     {
       icona: "👷",
       titolo: "Direzione lavori e sicurezza",
-      descrizione: "Supervisione costante del cantiere per garantire tempi, costi e qualità di esecuzione."
+      descrizione: "Supervisione costante del cantiere per garantire tempi, costi e qualità di esecuzione.",
+	  badge: "New"
     }
   ];
 
   const container = document.getElementById("servizi-container");
 
-  container.innerHTML = servizi.map(servizio => `
-    <div class="col-12 col-md-4">
-      <div class="card h-100 border-0 shadow-sm text-center p-4">
-        <div class="card-body">
-          <div class="fs-1 mb-3">${servizio.icona}</div>
-          <h3 class="h6 fw-bold mb-2" style="color: #2b241f;">${servizio.titolo}</h3>
-          <p class="card-text small text-muted mb-0">
-            ${servizio.descrizione}
-          </p>
-        </div>
+container.innerHTML = servizi.map(servizio => `
+  <div class="col-12 col-md-4">
+    <div class="card h-100 border-0 shadow-sm text-center p-4 position-relative">
+      
+      ${servizio.badge ? `
+        <span class="badge rounded-pill bg-danger position-absolute top-0 end-0 m-3">
+          ${servizio.badge}
+        </span>
+      ` : ''}
+
+      <div class="card-body">
+        <div class="fs-1 mb-3">${servizio.icona}</div>
+        <h3 class="h6 fw-bold mb-2" style="color: #2b241f;">${servizio.titolo}</h3>
+        <p class="card-text small text-muted mb-0">${servizio.descrizione}</p>
       </div>
     </div>
-  `).join("");
+  </div>
+`).join('');
 	
 	
