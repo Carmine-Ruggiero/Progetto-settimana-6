@@ -13,6 +13,12 @@ header.sticky-top {
   background-color: #2b241f;
   z-index: 1030; 
 }
+.display {
+  font-size: 4.5rem;      /* Circa 40px: più piccolo di display-3, ma ben evidente */
+  font-weight: 700;       /* Mantiene il testo in grassetto (equivale a fw-bold) */
+  line-height: 1.2;       /* Spaziatura verticale elegante tra le righe */
+  margin-bottom: 1rem;    /* Spazio sotto il titolo (equivale a mb-3) */
+}
 
 /*STUDIO*/
 #studio {
@@ -48,6 +54,8 @@ header.sticky-top {
 #studio .d-flex {
   justify-content: center;
 }
+
+
 
 /*CARD */
 

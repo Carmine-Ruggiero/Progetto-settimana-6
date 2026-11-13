@@ -12,7 +12,9 @@ Landing page responsiva e minimalista per **Atelier**, studio di progettazione p
 * **Modale di contatto (`#modaleInizia`):** Finestra popup in stile minimal (`rounded-0`) per richiedere una consulenza scegliendo il tipo di spazio, senza ricaricare o cambiare pagina.
 * **Gestione Form (JS):** Conferma visiva immediata all'invio dei dati e chiusura automatica del modale.
 
+
+
 ## Tecnologie
 * HTML5 & CSS3
-* Bootstrap 5 
+* Bootstrap 5.3.9
 * JavaScript 
