@@ -11,20 +11,17 @@
 </head>
 
 <body>
-	<header>
-		
-		<nav class="navbar navbar-expand-md sticky-top navbar-dark">
+	<header class="sticky-top">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 			<div class="container-fluid">
-				
+
 				<a class="navbar-brand fw-bold" href="#">Atelier</a>
 
-				
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
-				
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item">
@@ -42,193 +39,245 @@
 		</nav>
 	</header>
 
+
 	<main>
-		<section id="studio" class="d-flex align-items-center  py-5">
-			<!-- Inserisci qui il contenuto della sezione -->
+
+		<section id="studio" class="d-flex align-items-center py-5">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8">
-						<!-- Titolo grande -->
+
 						<h1 class="display-3 fw-bold mb-3">Architettura per spazi che parlano</h1>
 
-						<!-- Sottotitolo -->
-						<p id=progettoparagr >
-							Progettiamo case, uffici e spazi commerciali con attenzione alla luce, ai materiale e al
+						<p id="progettoparagr">
+							Progettiamo case, uffici e spazi commerciali con attenzione alla luce, ai materiali e al
 							contesto.
 						</p>
 
-						<!-- CTA (Call to Action) -->
-						<button type="button" class="btnInizia">Inizia un progetto</button>
+						<!-- 1. AGGIUNTI GLI ATTRIBUTI PER APRIRE IL MODALE -->
+						<button type="button" class="btnInizia" data-bs-toggle="modal" data-bs-target="#modaleInizia">
+							Inizia un progetto
+						</button>
 					</div>
 				</div>
 			</div>
 		</section>
-		<main>
 
-			<section id="servizi" class="py-5 bg-light">
-				<div class="container">
+		<!-- (Qui finisce il tuo </main> e l'eventuale </footer>) -->
 
-					<!-- Intestazione sezione -->
-					<div class="text-center mb-5">
-						<h2 class="fw-bold mb-2" style="color: #2b241f;">I nostri servizi</h2>
-						<p class="text-muted small mb-0">Tre aree di lavoro, una sola attenzione alla qualità.</p>
+		<!--     MODALE  -->
+		<div class="modal fade" id="modaleInizia" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content rounded-0 border-0 p-4">
+					<div class="modal-header border-0 p-0 mb-3">
+						<h5 class="modal-title fw-bold">Inizia un progetto</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
 					</div>
-
-					<!-- Griglia delle 3 card -->
-					<div class="row g-4">
-
-						<!-- Card 1: Progettazione residenziale -->
-						<div class="col-12 col-md-4">
-							<div class="card h-100 border-0 shadow-sm text-center p-4">
-								<div class="card-body">
-									<div class="fs-1 mb-3">🏠</div>
-									<h3 class="h6 fw-bold mb-2" style="color: #2b241f;">Progettazione residenziale</h3>
-									<p class="card-text small text-muted mb-0">
-										Case private, ville e ristrutturazioni domestiche, dal sopralluogo alla consegna
-										delle chiavi.
-									</p>
-								</div>
+					<div class="modal-body p-0">
+						<form id="formProgetto">
+							<div class="mb-3">
+								<label class="form-label small fw-semibold">Che spazio vuoi progettare?</label>
+								<select class="form-select rounded-0">
+									<option value="casa">Casa / Residenziale</option>
+									<option value="ufficio">Ufficio</option>
+									<option value="commerciale">Spazio commerciale</option>
+								</select>
 							</div>
-						</div>
-
-						<!-- Card 2: Interior design -->
-						<div class="col-12 col-md-4">
-							<div class="card h-100 border-0 shadow-sm text-center p-4">
-								<div class="card-body">
-									<div class="fs-1 mb-3">🪑</div>
-									<h3 class="h6 fw-bold mb-2" style="color: #2b241f;">Interior design</h3>
-									<p class="card-text small text-muted mb-0">
-										Allestimenti d'interno per case e uffici, con materiali selezionati e arredo su
-										misura.
-									</p>
-								</div>
+							<div class="mb-3">
+								<label class="form-label small fw-semibold">Il tuo nome</label>
+								<input type="text" class="form-control rounded-0" required>
 							</div>
-						</div>
-
-						<!-- Card 3: Ristrutturazioni -->
-						<div class="col-12 col-md-4">
-							<div class="card h-100 border-0 shadow-sm text-center p-4">
-								<div class="card-body">
-									<div class="fs-1 mb-3">🧱</div>
-									<h3 class="h6 fw-bold mb-2" style="color: #2b241f;">Ristrutturazioni</h3>
-									<p class="card-text small text-muted mb-0">
-										Riqualificazione di spazi esistenti, gestione dei lavori e coordinamento con le
-										imprese.
-									</p>
-								</div>
+							<div class="mb-3">
+								<label class="form-label small fw-semibold">La tua email</label>
+								<input type="email" class="form-control rounded-0" required>
 							</div>
-						</div>
-
+							<div class="mb-4">
+								<label class="form-label small fw-semibold">Parlaci del progetto</label>
+								<textarea class="form-control rounded-0" rows="3"></textarea>
+							</div>
+							<button type="submit" class="btnInizia w-100">Invia richiesta</button>
+						</form>
 					</div>
 				</div>
-			</section>
-		
-<section id="contatti" class="py-5 bg-light">
-    <div class="container">
-        <!-- Intestazione centrata come nel mockup -->
-        <div class="text-center mb-4">
-            <h2 class="fw-bold mb-1">Contattaci</h2>
-            <p class="text-muted small">Compila il form, ti rispondiamo entro 48 ore.</p>
-        </div>
+			</div>
+		</div>
 
-        <!-- Riga centrata -->
-        <div class="row justify-content-center">
-            <!-- Larghezza 100% su mobile (col-12), stretta e centrata su tablet (col-md-7) e desktop (col-lg-5) -->
-            <div class="col-12 col-md-7 col-lg-5">
-                <form>
-                    <div class="mb-3">
-                        <label for="nomeInput" class="form-label small text-muted mb-1">Nome</label>
-                        <input type="text" class="form-control bg-white" id="nomeInput" name="nome">
-                    </div>
 
-                    <div class="mb-3">
-                        <label for="emailInput" class="form-label small text-muted mb-1">Email</label>
-                        <input type="email" class="form-control bg-white" id="emailInput" name="email">
-                    </div>
 
-                    <div class="mb-3">
-                        <label for="progettoSelect" class="form-label small text-muted mb-1">Tipo di progetto</label>
-                        <select class="form-select bg-white" id="progettoSelect" required>
-                            <option value="1" selected>Residenziale</option>
-                            <option value="2">Commerciale</option>
-                            <option value="3">Direzionale</option>
-                        </select>
-                       
-                    </div>
 
-                    <div class="mb-4">
-                        <label for="messaggioTextarea" class="form-label small text-muted mb-1">Messaggio</label>
-                        <textarea class="form-control bg-white" id="messaggioTextarea" rows="4"></textarea>
-                    </div>
+		<section id="servizi" class="py-5 bg-light">
+			<div class="container">
 
-                    <!-- Pulsante largo quanto tutto il form -->
-                    <button type="submit" class="btnchius w-100  py-2" >
-                        Invia
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-		<!-- 3 colonne: Atelier+indirizzo / Link / Contatti. Copyright in fondo -->
 
-		<footer class="footer-atelier pt-5 pb-4">
-			<footer class="py-5 text-white">
-				<div class="container">
-					<div class="row gy-4">
+				<div class="text-center mb-5">
+					<h2 class="fw-bold mb-2" style="color: #2b241f;">I nostri servizi</h2>
+					<p class="text-muted small mb-0">Tre aree di lavoro, una sola attenzione alla qualità.</p>
+				</div>
 
-						<!-- Colonna 1: Atelier -->
-						<div class="col-12 col-md-4">
-							<h3 class="h6 fw-bold mb-3">Atelier</h3>
-							<p class="small text-white-50 mb-1">Studio di architettura</p>
-							<p class="small text-white-50 mb-0">Via dei Pioppi 12, Milano</p>
+				<div class="row g-4">
+
+
+					<div class="col-12 col-md-4">
+						<div class="card h-100 border-0 shadow-sm text-center p-4">
+							<div class="card-body">
+								<div class="fs-1 mb-3">🏠</div>
+								<h3 class="h6 fw-bold mb-2" style="color: #2b241f;">Progettazione residenziale</h3>
+								<p class="card-text small text-muted mb-0">
+									Case private, ville e ristrutturazioni domestiche, dal sopralluogo alla consegna
+									delle chiavi.
+								</p>
+							</div>
 						</div>
-
-						<!-- Colonna 2: Link -->
-						<div class="col-12 col-md-4">
-							<h3 class="h6 fw-bold mb-3">Link</h3>
-							<ul class="list-unstyled small text-white-50 mb-0">
-								<li class="mb-1"><a href="#studio"
-										class="footer-link text-reset text-decoration-none">Studio</a></li>
-								<li class="mb-1"><a href="#servizi"
-										class="footer-link text-reset text-decoration-none">Servizi</a></li>
-								<li><a href="#contatti" class="footer-link text-reset text-decoration-none">Contatti</a>
-								</li>
-							</ul>
-						</div>
-
-						<!-- Colonna 3: Contatti -->
-						<div class="col-12 col-md-4">
-							<h3 class="h6 fw-bold mb-3">Contatti</h3>
-							<ul class="list-unstyled small text-white-50 mb-0">
-								<li class="mb-1"><a href="mailto:info@atelier.example"
-										class="footer-link text-reset text-decoration-none">info@atelier.example</a>
-								</li>
-								<li><a href="tel:+390200001111" class="footer-link text-reset text-decoration-none">+39
-										02 0000 1111</a></li>
-							</ul>
-						</div>
-
 					</div>
 
 
-					<hr class="my-4 border-secondary opacity-25">
+					<div class="col-12 col-md-4">
+						<div class="card h-100 border-0 shadow-sm text-center p-4">
+							<div class="card-body">
+								<div class="fs-1 mb-3">🪑</div>
+								<h3 class="h6 fw-bold mb-2" style="color: #2b241f;">Interior design</h3>
+								<p class="card-text small text-muted mb-0">
+									Allestimenti d'interno per case e uffici, con materiali selezionati e arredo su
+									misura.
+								</p>
+							</div>
+						</div>
+					</div>
 
-					<!-- Copyright -->
-					<div class="text-center small text-white-50">
-						&copy; 2026 Atelier &mdash; tutti i diritti riservati
+
+					<div class="col-12 col-md-4">
+						<div class="card h-100 border-0 shadow-sm text-center p-4">
+							<div class="card-body">
+								<div class="fs-1 mb-3">🧱</div>
+								<h3 class="h6 fw-bold mb-2" style="color: #2b241f;">Ristrutturazioni</h3>
+								<p class="card-text small text-muted mb-0">
+									Riqualificazione di spazi esistenti, gestione dei lavori e coordinamento con le
+									imprese.
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<section id="contatti" class="py-5 bg-light">
+			<div class="container">
+
+				<div class="text-center mb-4">
+					<h2 class="fw-bold mb-1">Contattaci</h2>
+					<p class="text-muted small">Compila il form, ti rispondiamo entro 48 ore.</p>
+				</div>
+
+				<!-- Riga centrata -->
+				<div class="row justify-content-center">
+					<!-- Larghezza 100% su mobile (col-12), stretta e centrata su tablet (col-md-7) e desktop (col-lg-5) -->
+					<div class="col-12 col-md-7 col-lg-5">
+						<form>
+							<div class="mb-3">
+								<label for="nomeInput" class="form-label small text-muted mb-1">Nome</label>
+								<input type="text" class="form-control bg-white" id="nomeInput" name="nome">
+							</div>
+
+							<div class="mb-3">
+								<label for="emailInput" class="form-label small text-muted mb-1">Email</label>
+								<input type="email" class="form-control bg-white" id="emailInput" name="email">
+							</div>
+
+							<div class="mb-3">
+								<label for="progettoSelect" class="form-label small text-muted mb-1">Tipo di
+									progetto</label>
+								<select class="form-select bg-white" id="progettoSelect" required>
+									<option value="1" selected>Residenziale</option>
+									<option value="2">Commerciale</option>
+									<option value="3">Direzionale</option>
+								</select>
+
+							</div>
+
+							<div class="mb-4">
+								<label for="messaggioTextarea"
+									class="form-label small text-muted mb-1">Messaggio</label>
+								<textarea class="form-control bg-white" id="messaggioTextarea" rows="4"></textarea>
+							</div>
+
+							<!-- Pulsante largo quanto tutto il form -->
+							<button type="submit" class="btnchius w-100  py-2">
+								Invia
+							</button>
+						</form>
 					</div>
 				</div>
-			</footer>
-		</footer>
+			</div>
 
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-			crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.min.js"
-			integrity="sha384-89aa4glufciPv46aKltztWQEmk+Tu9W2RhzXr6VcnUUEub7F8+06RcL2RYLCOHUq"
-			crossorigin="anonymous"></script>
-		<script src="assets/js/script.js"></script>
+
+		</section>
+
+	</main>
+	<footer class="footer-atelier text-white pt-5 pb-4">
+		<div class="container">
+			<div class="row gy-4">
+
+
+				<div class="col-12 col-md-4">
+					<h3 class="h6 fw-bold mb-3">Atelier</h3>
+					<p class="small text-white-50 mb-1">Studio di architettura</p>
+					<p class="small text-white-50 mb-0">Via dei Pioppi 12, Milano</p>
+				</div>
+
+
+				<div class="col-12 col-md-4">
+					<h3 class="h6 fw-bold mb-3">Link</h3>
+					<ul class="list-unstyled small text-white-50 mb-0">
+						<li class="mb-2">
+							<a href="#studio" class="footer-link text-reset text-decoration-none">Studio</a>
+						</li>
+						<li class="mb-2">
+							<a href="#servizi" class="footer-link text-reset text-decoration-none">Servizi</a>
+						</li>
+						<li>
+							<a href="#contatti" class="footer-link text-reset text-decoration-none">Contatti</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="col-12 col-md-4">
+					<h3 class="h6 fw-bold mb-3">Contatti</h3>
+					<ul class="list-unstyled small text-white-50 mb-0">
+						<li class="mb-2">
+							<a href="mailto:info@atelier.example"
+								class="footer-link text-reset text-decoration-none">info@atelier.example</a>
+						</li>
+						<li>
+							<a href="tel:+390200001111" class="footer-link text-reset text-decoration-none">+39
+								02 0000 1111</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<hr class="my-4 border-secondary opacity-25">
+
+			<!-- Copyright -->
+			<div class="text-center small text-white-50">
+				&copy; 2026 Atelier &mdash; Tutti i diritti riservati
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.min.js"
+		integrity="sha384-89aa4glufciPv46aKltztWQEmk+Tu9W2RhzXr6VcnUUEub7F8+06RcL2RYLCOHUq"
+		crossorigin="anonymous"></script>
+	<script src="assets/js/script.js"></script>
 </body>
 
 </html>

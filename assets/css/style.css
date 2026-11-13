@@ -8,6 +8,12 @@ body {
 .navbar{
   background-color:  hsl(20, 20%, 15%)
 }
+
+header.sticky-top {
+  background-color: #2b241f;
+  z-index: 1030; 
+}
+
 /*STUDIO*/
 #studio {
   display: flex;
@@ -43,6 +49,30 @@ body {
   justify-content: center;
 }
 
+/*CARD */
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  border: 1px solid transparent !important;
+}
+
+/* Effetto al passaggio del mouse (Hover) */
+.card:hover {
+  transform: translateY(-8px); /* Solleva leggermente la card */
+  box-shadow: 0 12px 24px rgba(43, 36, 31, 0.15) !important; /* Ombra calda coordinata al testo */
+  border-color: rgba(43, 36, 31, 0.2) !important; /* Sottile bordo al passaggio */
+  background-color: #fcfbfa; /* Leggerissimo cambio di tonalità dello sfondo */
+}
+
+/* Effetto zoom sull'icona emoji */
+.card .fs-1 {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.card:hover .fs-1 {
+  transform: scale(1.12);
+}
 
 
 /*bottone form*/
@@ -77,6 +107,3 @@ color: white;}
   transition: color 0.2s ease-in-out;
 }
 
-.footer-link:hover {
-  color: hsl(40, 30%, 90%);
-}
