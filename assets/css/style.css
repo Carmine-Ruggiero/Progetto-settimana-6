@@ -16,20 +16,22 @@ body {
   align-items: center;
   text-align: center;
   min-height: 85vh;
-  background-color: #6b4c3b;
+  background-color: hsl(20, 30%, 35%);
   color: #ffffff;
 }
 .btnInizia {
   color: #ffffff; 
-  background-color: transparent; /* Sfondo trasparente */
+  background-color: hsl(20, 30%, 35%);
   border: 1px solid transparent; 
   cursor: pointer; 
   transition: border-color 0.3s ease;
 }
 
 .btnInizia:hover {
-  color: #ffffff; 
-  border-color: #ffffff; 
+  
+  background-color: hsl(20, 30%, 27%);
+  border-radius: 10%;
+ 
   
 }
 
@@ -40,6 +42,8 @@ body {
 #studio .d-flex {
   justify-content: center;
 }
+
+
 
 /*bottone form*/
 
