@@ -4,20 +4,75 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+
 .navbar{
   background-color:  hsl(20, 20%, 15%)
 }
-
+/*STUDIO*/
 #studio {
-  background-color:  hsl(20, 30%, 35%);
-  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 85vh;
+  background-color: #6b4c3b;
+  color: #ffffff;
+}
+.btnInizia {
+  color: #ffffff; 
+  background-color: transparent; /* Sfondo trasparente */
+  border: 1px solid transparent; 
+  cursor: pointer; 
+  transition: border-color 0.3s ease;
+}
+
+.btnInizia:hover {
+  color: #ffffff; 
+  border-color: #ffffff; 
+  
+}
+
+#studio .row {
+  justify-content: center;
+}
+
+#studio .d-flex {
+  justify-content: center;
+}
+
+/*bottone form*/
+
+.btnchius{
+  background-color: hsl(20, 30%, 35%);
+color: white;}
+.btnchius:hover {
+  background-color: #543b2d;
+}
+
+.btnchius:active {
+  transform: scale(0.99);
+  background-color: #3d2b20;
+}
+
+.btnchius:focus-visible {
+  outline: 2px solid #6b4c3b;
+  outline-offset: 2px;
 }
 
 
-
-
 /*Footer*/
+.footer-atelier {
+  background-color: hsl(20, 20%, 15%);
+  color: white;
+}
 
-.footer-atelier{
-  background-color:hsl(20, 20%, 15%)
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+  color: hsl(40, 30%, 90%);
 }
