@@ -16,20 +16,24 @@ Landing page responsiva e minimalista per **Atelier**, studio di progettazione p
 * **Gestione Form (JS):** Conferma visiva immediata all'invio dei dati e chiusura automatica del modale.
 
 
-
 ## 🧩 Gestione Dinamica dei Servizi (JavaScript)
 
 In seguito a un **refactoring dell'ultimo minuto**, si è deciso di abbandonare le card statiche in HTML per generarle interamente tramite **JavaScript**. Questa scelta si è rivelata **nettamente superiore**, rendendo il progetto molto più pulito, scalabile e professionale.
 
-### Perché è una scelta molto migliore
-* **Codice HTML più snello**: Eliminare sei blocchi di markup ripetuti ha alleggerito la struttura della pagina, migliorandone la leggibilità.
+### ✨ Perché è una scelta migliore
+* **Codice HTML più snello**: Eliminare i blocchi di markup ripetuti ha alleggerito la struttura della pagina, migliorandone la leggibilità.
 * **Manutenzione immediata**: Per aggiungere un nuovo servizio o modificare un testo basta intervenire su un singolo array di dati, senza il rischio di rompere il layout HTML.
 * **Scalabilità (Principio DRY)**: Il codice evita inutili duplicazioni ed è già pronto per eventuali future espansioni (come filtri o caricamento da database/API).
 
-### Come funziona
+### ⚙️ Come funziona
 * **Struttura dati (`servizi`)**: Icone, titoli e descrizioni sono raccolti in un unico array di oggetti.
 * **Rendering dinamico**: Il metodo `.map()` trasforma i dati nel template delle card e li inietta automaticamente nel contenitore `#servizi-container`.
 * **Griglia responsiva**: Grazie a **Bootstrap 5** (`col-12 col-md-4`), le schede si adattano in automatico da 1 colonna su smartphone a 3 colonne su desktop.
+
+
+                                        ---EXTRA---
+### 🆕 Aggiunta di una nuova sezione (con Badge dinamico)
+Grazie a questa nuova architettura, ho potuto integrare rapidamente una **nuova sezione dedicata a un servizio aggiuntivo** inserendo un nuovo oggetto nell'array e sfruttando una proprietà opzionale `badge` per evidenziare la novità all'utente:
 
 
 
