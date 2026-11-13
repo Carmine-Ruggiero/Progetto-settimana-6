@@ -23,7 +23,7 @@ Landing page responsiva e minimalista per **Atelier**, studio di progettazione p
 
 ## 🧩 Gestione Dinamica dei Servizi (JavaScript)
 
-In seguito a un **refactoring dell'ultimo minuto**, si è deciso di abbandonare le card statiche in HTML per generarle interamente tramite **JavaScript**. Questa scelta si è rivelata **nettamente superiore**, rendendo il progetto molto più pulito, scalabile e professionale.
+In seguito a un **refactoring dell'ultimo minuto**, ho deciso di abbandonare le card statiche in HTML per generarle interamente tramite **JavaScript**. Questa scelta si è rivelata **nettamente superiore**, rendendo il progetto molto più pulito, scalabile e professionale.
 
 ### ✨ Perché è una scelta migliore
 * **Codice HTML più snello**: Eliminare i blocchi di markup ripetuti ha alleggerito la struttura della pagina, migliorandone la leggibilità.
@@ -40,14 +40,6 @@ In seguito a un **refactoring dell'ultimo minuto**, si è deciso di abbandonare 
 ### 🆕 Aggiunta di una nuova sezione (con Badge dinamico)
 Grazie a questa nuova architettura, ho potuto integrare rapidamente una **nuova sezione dedicata a un servizio aggiuntivo** inserendo un nuovo oggetto nell'array e sfruttando una proprietà opzionale `badge` per evidenziare la novità all'utente:
 
-
-
-
-## Tecnologie
-* HTML5 
-* CSS3
-* BOOTSTRAP 5.3.9
-* JAVASCRIPT
 
 
 ### Footer (`footer-atelier`)
