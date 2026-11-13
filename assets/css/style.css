@@ -4,13 +4,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.card {
-  border: 2px solid #23b42c;
-}
-.card .card-title {
-  font-size: 2rem;
+.navbar{
+  background-color:  hsl(20, 20%, 15%)
 }
 
-/*# sourceMappingURL=style.css.map */h1{
-  background-color: #23b42c;
+#studio {
+  background-color:  hsl(20, 30%, 35%);
+  min-height: 80vh;
 }
+

@@ -1,51 +1,128 @@
 <!doctype html>
 <html lang="it">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Atelier </title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-	</head>
-	<body>
-		<header>
-			<!-- Navbar B<ootstrap (navbar-expand-md, sticky in cima) -->
-			 <h1>ATELIER</h1>
-		</header>
 
-		<main>
-			<section id="studio">
-				<!-- Hero: titolo grande, sottotitolo, CTA. Sfondo brand. min-height 80vh -->
-			</section>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Atelier </title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
 
-			<section id="servizi">
-				<!-- 3 card servizi affiancate da md in su -->
-			</section>
+<body>
+	<header>
+		<!-- Navbar Bootstrap (navbar-expand-md, sticky in cima, tema scuro) -->
+		<nav class="navbar navbar-expand-md sticky-top navbar-dark">
+			<div class="container-fluid">
+				<!-- Brand a sinistra -->
+				<a class="navbar-brand fw-bold" href="#">Atelier</a>
 
-			<section id="contatti">
-				<!-- Form contatti Bootstrap, larghezza limitata e centrata -->
-			</section>
-		</main>
+				<!-- Bottone hamburger a destra su mobile -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-		<footer>
-			<!-- 3 colonne: Atelier+indirizzo / Link / Contatti. Copyright in fondo -->
-		</footer>
+				<!-- Voci a destra su desktop, a sinistra nel menu mobile -->
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Studio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Servizi</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contatti</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
 
-		<script
-			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.min.js"
-			integrity="sha384-89aa4glufciPv46aKltztWQEmk+Tu9W2RhzXr6VcnUUEub7F8+06RcL2RYLCOHUq"
-			crossorigin="anonymous"
-		></script>
-		<script src="assets/js/script.js"></script>
-	</body>
+	<main>
+		<section id="studio" class="d-flex align-items-center text-white py-5">
+  <!-- Inserisci qui il contenuto della sezione -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<!-- Titolo grande -->
+				<h1 class="display-3 fw-bold mb-3">Architettura per spazi che parlano</h1>
+				
+				<!-- Sottotitolo -->
+				<p class="lead text-white-50 mb-4">
+					Progettiamo case, uffici e spazi commerciali con attenzione alla luce, ai materiale e al contesto.
+				</p>
+				
+				<!-- CTA (Call to Action) -->
+				<div class="d-flex flex-wrap gap-3">
+					
+					<a href="#contatti" class="btn btn-outline-light btn-lg px-4">Inizia un progetto</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<main>
+		<section id="servizi">
+			<!-- 3 card servizi affiancate da md in su -->
+		</section>
+
+		<section id="contatti">
+			<!-- Form contatti Bootstrap, larghezza limitata e centrata -->
+		</section>
+	</main>
+
+
+		<!-- 3 colonne: Atelier+indirizzo / Link / Contatti. Copyright in fondo -->
+		 
+	<footer class="footer-atelier pt-5 pb-4">
+  <div class="container">
+    
+    <div class="row gy-4 pb-4">
+      <!-- Colonna 1: Atelier -->
+      <div class="col-12 col-md-4">
+        <h3 class="h6 fw-bold text-white mb-3">Atelier</h3>
+        <p class="small mb-1">Studio di architettura</p>
+        <p class="small mb-0">Via dei Pioppi 12, Milano</p>
+      </div>
+
+      <!-- Colonna 2: Link -->
+      <div class="col-12 col-md-4">
+        <h3 class="h6 fw-bold text-white mb-3">Link</h3>
+        <ul class="list-unstyled small mb-0">
+          <li class="mb-1"><a href="#studio" class="footer-link text-decoration-none">Studio</a></li>
+          <li class="mb-1"><a href="#servizi" class="footer-link text-decoration-none">Servizi</a></li>
+          <li><a href="#contatti" class="footer-link text-decoration-none">Contatti</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonna 3: Contatti -->
+      <div class="col-12 col-md-4">
+        <h3 class="h6 fw-bold text-white mb-3">Contatti</h3>
+        <p class="small mb-1"><a href="mailto:info@atelier.example" class="footer-link text-decoration-none">info@atelier.example</a></p>
+        <p class="small mb-0"><a href="tel:+390200001111" class="footer-link text-decoration-none">+39 02 0000 1111</a></p>
+      </div>
+    </div>
+
+    <hr class="footer-divider mt-2 mb-4">
+
+    <div class="text-center small footer-copy">
+      &copy; 2026 Atelier &mdash; tutti i diritti riservati
+    </div>
+
+  </div>
+</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.min.js"
+		integrity="sha384-89aa4glufciPv46aKltztWQEmk+Tu9W2RhzXr6VcnUUEub7F8+06RcL2RYLCOHUq"
+		crossorigin="anonymous"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+
 </html>
