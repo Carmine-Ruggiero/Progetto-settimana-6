@@ -1,6 +1,11 @@
 # Progetto-settimana-6
 Progetto-settimana-6
 
+## Tecnologie usate
+* HTML5 
+* CSS3
+* BOOTSTRAP 5.3.9
+* JAVASCRIPT
 
 # Atelier — Studio di Architettura
 
@@ -39,6 +44,19 @@ Grazie a questa nuova architettura, ho potuto integrare rapidamente una **nuova 
 
 
 ## Tecnologie
-* HTML5 & CSS3
-* Bootstrap 5.3.9
-* JavaScript 
+* HTML5 
+* CSS3
+* BOOTSTRAP 5.3.9
+* JAVASCRIPT
+
+
+### Footer (`footer-atelier`)
+
+Componente footer responsive realizzato con **Bootstrap 5** per lo studio di architettura *Atelier*.
+
+* **Layout:** Griglia a 3 colonne (`col-md-4`) su desktop, impilata verticalmente su mobile (`col-12`).
+* **Contenuti:**
+  1. **Brand & Info:** Nome dello studio e indirizzo fisico.
+  2. **Navigazione rapida:** Link interni alle sezioni principali (`#studio`, `#servizi`, `#contatti`).
+  3. **Contatti diretti:** Email (`mailto:`) e numero di telefono (`tel:`) cliccabili.
+* **Stile:** Sfondo scuro (gestito dalla classe custom `.footer-atelier`), testo chiaro con gerarchia visiva (`text-white` / `text-white-50`) e barra del copyright separata da un divisore `<hr>`.
