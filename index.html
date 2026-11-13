@@ -44,85 +44,182 @@
 
 	<main>
 		<section id="studio" class="d-flex align-items-center text-white py-5">
-  <!-- Inserisci qui il contenuto della sezione -->
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8">
-				<!-- Titolo grande -->
-				<h1 class="display-3 fw-bold mb-3">Architettura per spazi che parlano</h1>
-				
-				<!-- Sottotitolo -->
-				<p class="lead text-white-50 mb-4">
-					Progettiamo case, uffici e spazi commerciali con attenzione alla luce, ai materiale e al contesto.
-				</p>
-				
-				<!-- CTA (Call to Action) -->
-				<div class="d-flex flex-wrap gap-3">
-					
-					<a href="#contatti" class="btn btn-outline-light btn-lg px-4">Inizia un progetto</a>
+			<!-- Inserisci qui il contenuto della sezione -->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<!-- Titolo grande -->
+						<h1 class="display-3 fw-bold mb-3">Architettura per spazi che parlano</h1>
+
+						<!-- Sottotitolo -->
+						<p class="lead text-white-50 mb-4">
+							Progettiamo case, uffici e spazi commerciali con attenzione alla luce, ai materiale e al
+							contesto.
+						</p>
+
+						<!-- CTA (Call to Action) -->
+						<div class="d-flex flex-wrap gap-3">
+
+							<a href="#contatti" class="btn btn-outline-light btn-lg px-4">Inizia un progetto</a>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-<main>
-		<section id="servizi">
-			<!-- 3 card servizi affiancate da md in su -->
 		</section>
+		<main>
 
-		<section id="contatti">
-			<!-- Form contatti Bootstrap, larghezza limitata e centrata -->
-		</section>
-	</main>
+			<section id="servizi" class="py-5 bg-light">
+				<div class="container">
+
+					<!-- Intestazione sezione -->
+					<div class="text-center mb-5">
+						<h2 class="fw-bold mb-2" style="color: #2b241f;">I nostri servizi</h2>
+						<p class="text-muted small mb-0">Tre aree di lavoro, una sola attenzione alla qualità.</p>
+					</div>
+
+					<!-- Griglia delle 3 card -->
+					<div class="row g-4">
+
+						<!-- Card 1: Progettazione residenziale -->
+						<div class="col-12 col-md-4">
+							<div class="card h-100 border-0 shadow-sm text-center p-4">
+								<div class="card-body">
+									<div class="fs-1 mb-3">🏠</div>
+									<h3 class="h6 fw-bold mb-2" style="color: #2b241f;">Progettazione residenziale</h3>
+									<p class="card-text small text-muted mb-0">
+										Case private, ville e ristrutturazioni domestiche, dal sopralluogo alla consegna
+										delle chiavi.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Card 2: Interior design -->
+						<div class="col-12 col-md-4">
+							<div class="card h-100 border-0 shadow-sm text-center p-4">
+								<div class="card-body">
+									<div class="fs-1 mb-3">🪑</div>
+									<h3 class="h6 fw-bold mb-2" style="color: #2b241f;">Interior design</h3>
+									<p class="card-text small text-muted mb-0">
+										Allestimenti d'interno per case e uffici, con materiali selezionati e arredo su
+										misura.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Card 3: Ristrutturazioni -->
+						<div class="col-12 col-md-4">
+							<div class="card h-100 border-0 shadow-sm text-center p-4">
+								<div class="card-body">
+									<div class="fs-1 mb-3">🧱</div>
+									<h3 class="h6 fw-bold mb-2" style="color: #2b241f;">Ristrutturazioni</h3>
+									<p class="card-text small text-muted mb-0">
+										Riqualificazione di spazi esistenti, gestione dei lavori e coordinamento con le
+										imprese.
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			</section>
+
+			<section id="contatti" class="py-5 bg-light">
+				<div>
+					<!-- Form contatti Bootstrap, larghezza limitata e centrata -->
+					<div class="mb-3">
+						<label for="nomeInput" class="form-label">Nome</label>
+						<input type="text" class="form-control" id="nomeInput" name="nome" placeholder="Digita il nome">
+					</div>
+
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label">Email</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1"
+							placeholder="name@example.com">
+
+					</div>
+					<div class="mb-3">
+						<select class="form-select" required aria-label="select example">
+							<option value="">Tipo di progetto </option>
+							<option value="1">Residenziale</option>
+							<option value="2">Commerciale </option>
+							<option value="3">Direzionale </option>
+						</select>
+						<div class="invalid-feedback">Example invalid select feedback</div>
+					</div>
+
+					<div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+				</div>
+			</section>
+
+		</main>
 
 
 		<!-- 3 colonne: Atelier+indirizzo / Link / Contatti. Copyright in fondo -->
-		 
-	<footer class="footer-atelier pt-5 pb-4">
-  <div class="container">
-    
-    <div class="row gy-4 pb-4">
-      <!-- Colonna 1: Atelier -->
-      <div class="col-12 col-md-4">
-        <h3 class="h6 fw-bold text-white mb-3">Atelier</h3>
-        <p class="small mb-1">Studio di architettura</p>
-        <p class="small mb-0">Via dei Pioppi 12, Milano</p>
-      </div>
 
-      <!-- Colonna 2: Link -->
-      <div class="col-12 col-md-4">
-        <h3 class="h6 fw-bold text-white mb-3">Link</h3>
-        <ul class="list-unstyled small mb-0">
-          <li class="mb-1"><a href="#studio" class="footer-link text-decoration-none">Studio</a></li>
-          <li class="mb-1"><a href="#servizi" class="footer-link text-decoration-none">Servizi</a></li>
-          <li><a href="#contatti" class="footer-link text-decoration-none">Contatti</a></li>
-        </ul>
-      </div>
+		<footer class="footer-atelier pt-5 pb-4">
+			<footer class="py-5 text-white" style="background-color: #2b241f;">
+				<div class="container">
+					<div class="row gy-4">
 
-      <!-- Colonna 3: Contatti -->
-      <div class="col-12 col-md-4">
-        <h3 class="h6 fw-bold text-white mb-3">Contatti</h3>
-        <p class="small mb-1"><a href="mailto:info@atelier.example" class="footer-link text-decoration-none">info@atelier.example</a></p>
-        <p class="small mb-0"><a href="tel:+390200001111" class="footer-link text-decoration-none">+39 02 0000 1111</a></p>
-      </div>
-    </div>
+						<!-- Colonna 1: Atelier -->
+						<div class="col-12 col-md-4">
+							<h3 class="h6 fw-bold mb-3">Atelier</h3>
+							<p class="small text-white-50 mb-1">Studio di architettura</p>
+							<p class="small text-white-50 mb-0">Via dei Pioppi 12, Milano</p>
+						</div>
 
-    <hr class="footer-divider mt-2 mb-4">
+						<!-- Colonna 2: Link -->
+						<div class="col-12 col-md-4">
+							<h3 class="h6 fw-bold mb-3">Link</h3>
+							<ul class="list-unstyled small text-white-50 mb-0">
+								<li class="mb-1"><a href="#studio"
+										class="footer-link text-reset text-decoration-none">Studio</a></li>
+								<li class="mb-1"><a href="#servizi"
+										class="footer-link text-reset text-decoration-none">Servizi</a></li>
+								<li><a href="#contatti" class="footer-link text-reset text-decoration-none">Contatti</a>
+								</li>
+							</ul>
+						</div>
 
-    <div class="text-center small footer-copy">
-      &copy; 2026 Atelier &mdash; tutti i diritti riservati
-    </div>
+						<!-- Colonna 3: Contatti -->
+						<div class="col-12 col-md-4">
+							<h3 class="h6 fw-bold mb-3">Contatti</h3>
+							<ul class="list-unstyled small text-white-50 mb-0">
+								<li class="mb-1"><a href="mailto:info@atelier.example"
+										class="footer-link text-reset text-decoration-none">info@atelier.example</a>
+								</li>
+								<li><a href="tel:+390200001111" class="footer-link text-reset text-decoration-none">+39
+										02 0000 1111</a></li>
+							</ul>
+						</div>
 
-  </div>
-</footer>
+					</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.min.js"
-		integrity="sha384-89aa4glufciPv46aKltztWQEmk+Tu9W2RhzXr6VcnUUEub7F8+06RcL2RYLCOHUq"
-		crossorigin="anonymous"></script>
-	<script src="assets/js/script.js"></script>
+
+					<hr class="my-4 border-secondary opacity-25">
+
+					<!-- Copyright -->
+					<div class="text-center small text-white-50">
+						&copy; 2026 Atelier &mdash; tutti i diritti riservati
+					</div>
+				</div>
+			</footer>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.min.js"
+			integrity="sha384-89aa4glufciPv46aKltztWQEmk+Tu9W2RhzXr6VcnUUEub7F8+06RcL2RYLCOHUq"
+			crossorigin="anonymous"></script>
+		<script src="assets/js/script.js"></script>
 </body>
 
 </html>
